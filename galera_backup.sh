@@ -18,7 +18,7 @@ set -u  # stop execution if something goes wrong
 weeks=8;											# Number of weeks to backup to keep
 backupDirectory=/home/backup/galera_cluster;		# Backup Directory
 dataDirectory=/var/lib/mysql;						# MySQL Database Location
-userArguments="--user=root --password=PaSsWoRd";	# MySQL Username & Password
+userArguments="--user=root --password=PaSsWoRd --socket=/var/lib/mysql/mysql.sock";	# MySQL Username & Password
 
 usage() {
 	echo -e "\nusage: $(dirname $0)/$(basename $0) {full|incremental|restore|help}";
