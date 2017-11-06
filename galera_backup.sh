@@ -15,9 +15,9 @@ set -e  # stops execution if a variable is not set
 set -u  # stop execution if something goes wrong
 
 # Custom Variables
-weeks=8;											# Number of weeks to backup to keep
-backupDirectory=/home/backup/galera_cluster;		# Backup Directory
-dataDirectory=/var/lib/mysql;						# MySQL Database Location
+weeks=8;										# Number of weeks of backup's to keep
+backupDirectory=/home/backup/galera_cluster;						# Backup Directory
+dataDirectory=/var/lib/mysql;								# MySQL Database Location
 userArguments="--user=root --password=PaSsWoRd --socket=/var/lib/mysql/mysql.sock";	# MySQL Username & Password
 
 usage() {
